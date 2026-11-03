@@ -55,3 +55,14 @@ if('IntersectionObserver' in window){
   secs.forEach(function(s){if(s)io.observe(s)});
 }
 })();
+
+(function(){
+  var b=document.getElementById('copy-addr');
+  if(!b)return;
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.getAttribute('data-target')),txt=el.textContent.trim();
+    function done(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy'},1800)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){sel()})}else{sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){b.textContent='Press Ctrl+C'}}
+  });
+})();

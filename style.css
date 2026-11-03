@@ -68,3 +68,21 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem}
  .count{margin-left:0;width:100%}
 }
 @media print{.nav,.tools,.skip{display:none}.pane{display:block}body{background:#fff;color:#000}}
+
+/* join section */
+.lead2{font-size:1.1rem;max-width:46em}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);text-decoration:none;font:inherit;font-weight:600;padding:12px 22px;border-radius:10px;border:2px solid var(--accent);cursor:pointer}
+.btn span{display:block;font-weight:400;font-size:.82rem;opacity:.9}
+.btn:hover,.btn:focus-visible{filter:brightness(1.1)}
+.btn.small{padding:8px 16px}
+.btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.hero .btn:not(.ghost){background:#fff;color:var(--hero1);border-color:#fff}
+.herocta{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 0}
+.joinbox{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:20px 0;align-items:start}
+.joinbtn,.joinaddr{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.joinbtn .btn{font-size:1.2rem;padding:16px 26px}
+.label{margin:0 0 6px;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.addr{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.addr code{font-size:1.5rem;font-weight:600;padding:.2em .6em;user-select:all}
+.steps li{margin:.7em 0}
+.trouble li{margin:.5em 0}

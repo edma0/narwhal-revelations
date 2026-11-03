@@ -10,13 +10,14 @@
 <script src="site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#overview">Skip to content</a>
+<a class="skip" href="#join">Skip to content</a>
 
 <header class="hero" id="top">
   <div class="wrap">
     <p class="eyebrow">Modpack write-up</p>
     <h1>Narwhal Revelations</h1>
     <p class="lead">A NeoForge 1.21.1 port of a customised <em>Beyond Mines: Revelations II</em> 1.2.1 server (Minecraft 1.20.1, Forge). Version 1.1.0, by Narwhalman_Op.</p>
+    <p class="herocta"><a class="btn" href="#join">How to join the server</a> <a class="btn ghost" href="downloads/Narwhal_Revelations-1.1.0.zip" download>Download the modpack</a></p>
     <ul class="stats">
       <li><b>1.21.1</b><span>Minecraft</span></li>
       <li><b>21.1.265</b><span>NeoForge</span></li>
@@ -27,8 +28,39 @@
     </ul>
   </div>
 </header>
-<nav class="nav" aria-label="Sections"><div class="wrap"><a href="#overview">Overview</a><a href="#differences">Differences</a><a href="#ports">Community ports</a><a href="#missing">Missing mods</a><a href="#configs">Configs carried</a><a href="#scripts">KubeJS</a><a href="#caveats">Caveats</a><a href="#install">Install</a><a href="#modlist">Full mod list</a></div></nav>
+<nav class="nav" aria-label="Sections"><div class="wrap"><a href="#join">Join</a><a href="#overview">Overview</a><a href="#differences">Differences</a><a href="#ports">Community ports</a><a href="#missing">Missing mods</a><a href="#configs">Configs carried</a><a href="#scripts">KubeJS</a><a href="#caveats">Caveats</a><a href="#install">Install</a><a href="#modlist">Full mod list</a></div></nav>
 <main class="wrap">
+<section id="join"><h2>Join the server</h2>
+<p class="lead2">Want to play? It takes about 10 minutes the first time. You need a Minecraft: Java Edition account and the free CurseForge app.</p>
+<div class="joinbox">
+  <div class="joinbtn">
+    <a class="btn" id="dl-pack" href="downloads/Narwhal_Revelations-1.1.0.zip" download>Download the modpack<span>Narwhal_Revelations-1.1.0.zip &middot; 22 MB</span></a>
+    <p class="note">Version 1.1.0 &middot; Minecraft 1.21.1 &middot; NeoForge 21.1.265. Don't unzip it, CurseForge imports the zip as it is.</p>
+  </div>
+  <div class="joinaddr">
+    <p class="label" id="addr-label">Server address</p>
+    <div class="addr"><code id="server-address" aria-labelledby="addr-label">144.6.241.231</code><button type="button" class="btn small" id="copy-addr" data-target="server-address">Copy</button></div>
+    <p class="note">No port needed. If the address ever changes, it will be updated here.</p>
+  </div>
+</div>
+<h3>How to join</h3>
+<ol class="steps">
+<li><strong>Install the CurseForge app</strong> from <a href="https://www.curseforge.com/download/app" rel="noopener">curseforge.com/download/app</a> and open it. Choose <strong>Minecraft</strong>.</li>
+<li><strong>Import the pack.</strong> Click <strong>Create Custom Profile</strong>, then <strong>Import</strong>, and pick the zip you downloaded above. CurseForge sets up Minecraft 1.21.1, NeoForge and all the mods for you. The first install takes a few minutes.</li>
+<li><strong>Give it memory.</strong> Open the profile's settings (the gear icon), find <strong>Allocated Memory</strong> and set it to <strong>8 GB</strong> (8192 MB). If your PC has 16 GB or more it is fine to go a bit higher; with 8 GB of RAM or less in total, expect trouble.</li>
+<li><strong>Press Play.</strong> The first launch is slow because of the 205 mods. Sign in with your Minecraft: Java Edition account when asked.</li>
+<li><strong>Add the server.</strong> In the game choose <strong>Multiplayer</strong>, then <strong>Add Server</strong>. Paste the server address from the box above, press <strong>Done</strong>, then double-click the server.</li>
+</ol>
+<h3>If something goes wrong</h3>
+<ul class="trouble">
+<li><strong>"Mismatched mod list", "incompatible" or it won't connect:</strong> your pack is out of date. Download the latest pack from this page and import it again as a new profile.</li>
+<li><strong>The game crashes on start or says it is out of memory:</strong> raise <strong>Allocated Memory</strong> in the CurseForge profile settings (try 10 GB), and close other programs.</li>
+<li><strong>"Failed to authenticate" or "invalid session":</strong> restart the launcher and sign in again. The server needs a genuine Java Edition account; offline or cracked accounts can't join.</li>
+<li><strong>A mod can't be downloaded during import:</strong> try the import again; if it still fails, tell Narwhalman_Op which mod it names.</li>
+</ul>
+<p class="note">Check your download is intact (optional): its SHA-256 should start <code>72cbf75f</code> and end <code>71e72460</code>.</p>
+</section>
+
 <section id="overview"><h2>Overview</h2>
 <p>Narwhal Revelations takes a hand-modified <em>Beyond Mines: Revelations II</em> 1.2.1 server (Minecraft 1.20.1, Forge 47.3.0, 210 mods) and rebuilds it for <strong>Minecraft 1.21.1 on NeoForge 21.1.265</strong>. Every mod that has a NeoForge 1.21.1 build is in. Seven mods that only have unofficial community ports are in as well. The rest are listed with reasons in <a href="#missing">Missing mods</a>.</p>
 <div class="cards">
@@ -429,7 +461,7 @@
 <div class="cols">
 <div class="card"><h3>Players: CurseForge app import</h3>
 <ol>
-<li>Get <code>Narwhal_Revelations-1.1.0.zip</code> from the pack author.</li>
+<li>Download <a href="downloads/Narwhal_Revelations-1.1.0.zip" download><code>Narwhal_Revelations-1.1.0.zip</code></a> (see <a href="#join">Join the server</a> for the short version).</li>
 <li>In the CurseForge app, open <strong>Minecraft</strong>, choose <strong>Create Custom Profile</strong> and then <strong>Import</strong>, and pick the zip. Other launchers that read CurseForge manifests can import it as well.</li>
 <li>The app installs Minecraft 1.21.1, NeoForge 21.1.265 and the CurseForge mods. The 8 Modrinth jars come from the zip itself.</li>
 <li>Give the game 6 to 8 GB of RAM or more; the pack has 205 mods.</li>

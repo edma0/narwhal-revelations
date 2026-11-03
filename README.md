@@ -17,6 +17,7 @@ Preview locally with `python3 -m http.server` in this folder and open `http://lo
 
 ## Notes
 
-- This repository does not contain the modpack zips or any mod jars. The install section tells readers to get the zips from the pack author; add your download links there if you want them on the page.
+- `downloads/Narwhal_Revelations-1.1.0.zip` is the client modpack (CurseForge import zip, 22 MB). It contains configs and a manifest, plus a few bundled jars; no server pack is hosted here.
+- To change the server address, edit the text inside `<code id="server-address">` in the *Join the server* section of `index.html`. To publish a new pack version, replace the zip in `downloads/` and update the file name in the download links (`#dl-pack`, hero button and Install card).
 - The page content is generated from a one-off report; facts were checked on 3 Nov 2026 against CurseForge and Modrinth and can go out of date.
 - Mods and the unofficial ports belong to their authors.
