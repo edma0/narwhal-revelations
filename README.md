@@ -1,6 +1,6 @@
 # Narwhal Revelations: write-up site
 
-A static website describing the Narwhal Revelations modpack (version 1.1.0): a NeoForge 1.21.1 port of a customised Beyond Mines: Revelations II 1.2.1 server.
+A static website describing the Narwhal Revelations modpack (version 1.1.2): a NeoForge 1.21.1 port of a customised Beyond Mines: Revelations II 1.2.1 server.
 
 ## Files
 
@@ -17,7 +17,7 @@ Preview locally with `python3 -m http.server` in this folder and open `http://lo
 
 ## Notes
 
-- `downloads/Narwhal_Revelations-1.1.0.zip` is the client modpack (CurseForge import zip, 22 MB). It contains configs and a manifest, plus a few bundled jars; no server pack is hosted here.
+- `downloads/Narwhal_Revelations-1.1.2.zip` is the client modpack (CurseForge import zip, 24 MB). It contains configs and a manifest, plus a few bundled jars; no server pack is hosted here.
 - To change the server address, edit the text inside `<code id="server-address">` in the *Join the server* section of `index.html`. To publish a new pack version, replace the zip in `downloads/` and update the file name in the download links (`#dl-pack`, hero button and Install card).
 - The page content is generated from a one-off report; facts were checked on 3 Nov 2026 against CurseForge and Modrinth and can go out of date.
 - Mods and the unofficial ports belong to their authors.
